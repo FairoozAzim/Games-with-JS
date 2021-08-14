@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+body {
+    background-color: black;
+    font-family: 'Caveat', cursive;
+}
+
+.title {
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    animation: glow 100s ease-in-out infinite alternate;
+}
+
+.score,
+.tries {
+    color: white;
+    font-size: 30px;
+}
+
+.instructions {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+#result {
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+#restart-btn {
+    color: #fff;
+    background-color: black;
+    width: 120px;
+    height: 40px;
+    border: 2px solid #e60073;
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 300px;
+    margin-left: 40%;
+    margin-top: -10%;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
